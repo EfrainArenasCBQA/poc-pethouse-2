@@ -1,0 +1,25 @@
+:root{--bg:#f6f8fa;--card:#fff;--muted:#94a3b8;--accent:#0ea5a4}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0;background:var(--bg);color:#111}
+.app{max-width:1100px;margin:24px auto;padding:16px}
+header{display:flex;flex-direction:column;gap:6px}
+.controls{display:flex;gap:12px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+.card img{width:100%;height:180px;object-fit:cover}
+.emoji{width:100%;height:180px;display:flex;align-items:center;justify-content:center;font-size:72px;background:linear-gradient(180deg,#fbfdfd,#f3f4f6)}
+.card-body{padding:12px}
+.card h3{margin:0 0 6px 0;font-size:1.1rem}
+.card .desc{color:var(--muted);margin:6px 0}
+.meta{list-style:none;padding:0;margin:6px 0;display:flex;gap:10px;flex-wrap:wrap}
+.meta li{font-size:.9rem;color:#334155}
+.actions{display:flex;align-items:center;gap:10px;margin-top:8px}
+button{padding:8px 12px;border-radius:8px;border:0;cursor:pointer}
+.btn-primary{background:var(--accent);color:white}
+.btn-muted{background:#e2e8f0;color:#334155}
+.status{padding:6px 8px;border-radius:8px;font-weight:600}
+.status.available{background:#d1fae5;color:#065f46}
+.status.adopted{background:#fee2e2;color:#991b1b}
+.card.dog h3::after{content:" 🐶"}
+.card.cat h3::after{content:" 🐱"}
+footer{margin-top:18px;text-align:center;color:var(--muted)}
